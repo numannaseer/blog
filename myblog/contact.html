@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>A Personal Website</title>
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="./css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body class="d-flex flex-column">
+        <!-----------------------------main---------------------------------------------------------------------------------------------->
+        <main class="flex-shrink-0">
+            <!----------------------Navigation------------------------------------------------------------------------------------------------------->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: royalblue!important;">
+                <div class="container px-5">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"
+                        style="box-shadow:  0 0 0 0.25rem !important;"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item"><a class="nav-link" href="./index.html"
+                                    style="font-family:bold;">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="./portfolio.html" style="font-family:bold">Portfolio</a>
+                                <ul aria-labelledby="navbarDropdownPortfolio">
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="./blog.html" style="font-family:bold">Blog</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="./contact.html"
+                                    style="font-family:bold">Contact</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+            <!------------------------------------End of Navigation------------------------------------------------------------------>
+
+            <!------------------------------------Page content = Contact form + My address----------------------------------------------------------------------------->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-------------------------------Contact form = Name Input + Email address input + Phone number input + message input + message input + Submit button---------------------------------------------------------------------------------->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Get in touch</h1>
+                            <p class="lead fw-normal text-muted mb-0">I'd ❤️ to hear from you!</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                    <!----------------------------------Name input------------------------------------------------------------>
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text"
+                                            placeholder="Enter your name..." data-sb-validations="required" />
+                                        <label for="name">Full name</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is
+                                            required.</div>
+                                    </div>
+                                    <!-----------------------------End of name input--------------------------------------------------------------------------------->
+                                    <!----------------------------Email address input------------------------------------------------------------------------->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="email" type="email"
+                                            placeholder="name@example.com" data-sb-validations="required,email" />
+                                        <label for="email">Email address</label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is
+                                            required.
+                                        </div>
+                                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.
+                                        </div>
+                                    </div>
+                                    <!--------------------End of Email address input-------------------------------------------------------------------------------------------
+                                    <!-----------------------Phone number input-------------------------------------------------------------------------------------------->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                            data-sb-validations="required" />
+                                        <label for="phone">Phone number</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number
+                                            is required.
+                                        </div>
+                                    </div>
+                                    <!---------------------End of Phone number input------------------------------------------------------->
+                                    <!---------------------------Message input------------------------------------------------->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text"
+                                            placeholder="Enter your message here..." style="height: 10rem"
+                                            data-sb-validations="required"></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                                            required.
+                                        </div>
+                                    </div>
+                                    <!------------------------------End of message input--------------------------------------------------------------------------------------------------------------------->
+
+                                    <!-----------------------------Submit Button------------------------------------------------------------------------------------------------------------------------------------------>
+                                    <div class="d-grid"><a href="#!"><button class="btn btn-primary btn-lg disabled"
+                                                id="submitButton" type="submit"
+                                                style="margin-left:130px; background-color: rgb(0, 151, 63) !important;color: #000005;">Submit</button></a>
+                                    </div>
+                                    <!------------------------------End of Submit Button----------------------------------------------------------------------------------------------------------------------------------------->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------End of Contact form = Name Input + Email address input + Phone number input + message input + message input + Submit button---------------------------------------------------------------------------------->
+
+                    <!------------------------------------------My Address------------------------------------------------------------------------------------------------------->
+                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5" style="margin-left: 227px;">
+
+                        <a href="https://discord.com/" style="text-decoration: none;">
+                            <div class="col">
+
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                                    style="margin-left: 10px;"><i class="bi bi-people"></i>
+                                </div>
+                                <div class="h5">Discord</div>
+                                <p class="text-muted mb-0" style="line-height: 25px;">Explore my community forums</p>
+                            </div>
+                        </a>
+
+                        <div class="col" style="margin-left:5px">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                                style="margin-left: 10px;"><i class="bi bi-chat-dots"></i></div>
+                            <div class="h5 mb-2">E-mail</div>
+                            <p class="text-muted mb-0" style="line-height: 25px;">abcandmum <br> @gmail.com</p>
+                        </div>
+
+                        <div class="col" style="margin-left:30px">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"
+                                style="margin-left: -5px;"><i class="bi bi-telephone"></i></div>
+                            <div class="h5">Call</div>
+                            <p class="text-muted mb-0" style="line-height: 25px;">9113284074 <br> 7-9pm</p>
+                        </div>
+                        <!----------------------------------------------End of My Address-->
+                    </div>
+                </div>
+                <!------------------------------------End of Page content = Contact form + My address----------------------------------------------------------------------------->
+            </section>
+            <!-----------------------------------End of main---------------------------------------------------------------------------------->
+        </main>
+        <!--------------------------------------Footer------------------------------------------------------------------------>
+        <footer class="bg-dark py-4 mt-auto" style="background-color: royalblue!important;">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Follow me on:
+                            <span><a class="fs-5 px-2 link-dark" href="https://twitter.com/"><i
+                                        class="bi-twitter"></i></a></span>
+                            <span> <a class="fs-5 px-2 link-dark" href="https://www.facebook.com/"><i
+                                        class="bi-facebook"></i></a></span>
+                            <span><a class="fs-5 px-2 link-dark" href="https://www.linkedin.com/in/numannaseer"><i
+                                        class="bi-linkedin"></i></a></span>
+                            <span> <a class="fs-5 px-2 link-dark" href="https://www.youtube.com/"><i
+                                        class="bi-youtube"></i></a></span>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!" style="text-decoration: none;">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!" style="text-decoration: none;">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="./contact.html" style="text-decoration: none;">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!----------------------------------------------End of Footer--------------------------------------------------------------------->
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core theme JS-->
+        <script src="./js/scripts.js"></script>
+
+        <!--Start Bootstrap form-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+
+</html>
